@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html style="height: 594px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Journal Created</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Pretty-Registration-Form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Table-With-Search-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Table-With-Search.css') }}">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="background: rgba(0,0,0,0.33);text-align: center;padding-right: 0px;padding-bottom: 10px;padding-left: 26px;">
+        <div class="container"> <a href="/"><img src="static/assets/img/abstract-82.png" href="/" style="width: 43px;margin-right: 10px;"><a class="navbar-brand js-scroll-trigger" href="#page-top" style="color: rgb(255,229,0);margin-right: 0px;font-weight: bold;padding-bottom: 0;">Digital&nbsp;</a><a class="navbar-brand js-scroll-trigger"
+                href="#page-top" style="color: rgb(240,95,64);font-weight: 700;padding-bottom: 0px;margin-right: 0px;">Accountant</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify" style="color: rgb(255,255,255);"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto" style="color: rgb(255,255,255);">
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: rgb(255,255,255);" href="#">CREATE&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="/createJE">New Journal</a><a class="dropdown-item" href="/createLease">New Lease</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: rgb(255,255,255);" href="#">EDIT&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Existing&nbsp;Journals</a><a class="dropdown-item" href="#"></a><a class="dropdown-item" href="#">Lease Details</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: rgb(255,255,255);" href="#">VIEW&nbsp;</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="/viewJE">Journals</a><a class="dropdown-item" href="/viewLease">Leases</a><a class="dropdown-item" href="/viewFS">Financials</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white d-flex" style="background: url(&quot;static/assets/img/header.jpg&quot;);background-size: cover;">
+        <div class="container my-auto">
+            <div class="row" style="height: 677px;">
+                <div class="col-lg-10 mx-auto" style="padding-bottom: 0px;">
+                    <h1 class="text-uppercase"></h1>
+                    <div class="row register-form" style="height: 615px;">
+                        <div class="col-md-8 offset-md-2" style="margin-top: 4px;padding-left: 0px;padding-right: 0px;height: 664px;">
+                            <form class="custom-form" style="height: 900px;padding-bottom: 30px;padding-top: 29px;padding-right: 40px;padding-left: 40px;border-bottom-width: 6px;border-bottom-color: rgb(255,0,0);">
+                                <h1 style="border-bottom-color: #f05f40;margin-top: 0px;">New Journal Entry</h1>
+                                <h1 style="margin-top: 0px;border-bottom-style: none;border-bottom-color: #f05f40;padding-right: 0;padding-bottom: 0;padding-top: 0;padding-left: 0;">Journal Entry successfully created!&nbsp;</h1>
+                                <div class="form-row">
+                                    <div class="col" style="height: 50px;"><button type= "submit" formaction="/createJE" class="btn btn-primary" type="button">CREATE another</button></div>
+                                </div><button class="btn btn-primary" type="submit" formaction="/viewJE">VIEW JOURNALS</button></form>
+                        </div>
+                    </div>
+                    <hr style="margin-top: 70px;">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="col" style="padding-top: 13px;text-align: center;margin-top: 174px;">
+        <p class="text-uppercase border rounded-0" style="font-family: 'Open Sans', sans-serif;padding-top: 24px;"><img src="static/assets/img/linkedin.png" style="width: 23px;"><strong>&nbsp; Created by Rehan Shaik</strong></p>
+    </div>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="static/assets/js/creative.js"></script>
+    <script src="static/assets/js/Table-With-Search.js"></script>
+</body>
+
+</html>
