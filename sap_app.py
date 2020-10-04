@@ -191,8 +191,8 @@ def download_journals():
 @app.route("/downloadlease/<gid>/")
 def download_lease(gid):
 	try:
-		indi_lease[gid].to_excel(f'static/documents/{gid}_lease.xlsx')
-		return send_file(f'static/documents/{gid}_Lease.xlsx', as_attachment=True)
+		indi_lease[gid].to_excel(f'static/{gid}_lease.xlsx')
+		return send_file(f'static/{gid}_Lease.xlsx', as_attachment=True)
 	except Exception as e:
 		return str(e)
 
